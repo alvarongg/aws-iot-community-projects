@@ -1,6 +1,6 @@
-from aws_cdk import core
-from iot_stack import IoTStack
+from aws_cdk import App
+from lib.iot_stack import IoTStack
 
-app = core.App()
-IoTStack(app, "IoTStack")
+app = App()
+IoTStack(app, "IoTStack1")
 app.synth()
